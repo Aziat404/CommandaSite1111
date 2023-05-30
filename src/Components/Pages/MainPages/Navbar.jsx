@@ -3,11 +3,14 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
+
+
 export function Navbar() {
 
-  const [lang,setLang] = useState(true)
+  const [lang, setLang] = useState(true)
 
-  let langFunc = () =>{
+  let langFunc = () => {
     setLang(!lang)
   }
 
@@ -24,6 +27,6 @@ export function Navbar() {
       <div onClick={langFunc} className="nav__Language-Btn">
         {lang ? "uz" : "ru"}
       </div>
-    </div> 
+    </div>
   );
 }
